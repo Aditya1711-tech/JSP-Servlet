@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Website</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>My form</h1>
+      <form action="RegisterServlet" method="post">
+        <table>
+          <tr>
+            <td>Enter your name:</td>
+            <td>
+              <input
+                type="text"
+                name="userName"
+                placeholder="Enter your name"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Enter your password:</td>
+            <td>
+              <input
+                type="password"
+                name="userPassword"
+                placeholder="Enter your password"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td>Enter your email:</td>
+            <td>
+              <input
+                type="text"
+                name="userEmail"
+                placeholder="Enter your email"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Select gender:</td>
+            <td>
+              <input type="radio" name="userGender" value="male" /> Male
+              &nbsp;&nbsp;&nbsp;
+              <input type="radio" name="userGender" value="female" />Female
+            </td>
+          </tr>
+          <tr>
+            <td>Select course:</td>
+            <td>
+              <select name="userCourse" id="">
+                <option value="Java">Java</option>
+                <option value="Php">Php</option>
+                <option value="Python">Python</option>
+                <option value="Javascript">Javascript</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: right">
+              <input type="checkbox" value="checked" name="condition" />
+            </td>
+            <td>Agree to terms and conditions.</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <button type="submit">Register</button>
+              <button type="reset">Reset</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>

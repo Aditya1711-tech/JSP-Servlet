@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<table>
+	<tr>
+		<td>n1:</td>
+		<td><input type="number" name="n1"></td>
+	</tr>
+	<tr>
+		<td>n2:</td>
+		<td><input type="number" name="n2"></td>
+	</tr>
+</table>
+
+</body>
+</html>

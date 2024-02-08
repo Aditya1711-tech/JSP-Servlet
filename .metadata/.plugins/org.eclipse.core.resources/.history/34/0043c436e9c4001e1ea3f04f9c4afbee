@@ -1,0 +1,42 @@
+package com.servlets;
+
+import java.io.IOException;
+
+import javax.servlet.*;
+
+public class FirstServlet implements Servlet{
+	
+	ServletConfig conf;
+	
+	
+	// Life cycle methods
+	@Override
+	public void init(ServletConfig config) throws ServletException {
+		conf = config;
+		System.out.println("Creating object......");
+	}
+	
+	@Override
+	public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
+		System.out.println("Servicing....");
+	}
+	
+	@Override
+	public void destroy() {
+		System.out.println("Going to destroy...");
+	}
+	
+	
+	// Non life cycle methods
+	@Override
+	public ServletConfig getServletConfig() {
+		return conf;
+	}
+
+	@Override
+	public String getServletInfo() {
+		return "This servlet is created by Aditya";
+	}
+
+	
+}

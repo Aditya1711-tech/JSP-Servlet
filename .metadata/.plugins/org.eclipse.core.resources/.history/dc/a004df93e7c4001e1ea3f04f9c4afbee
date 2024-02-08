@@ -1,0 +1,40 @@
+package com.servlets;
+
+import java.io.IOException;
+
+import javax.servlet.*;
+
+public class FirstServlet implements Servlet{
+	
+	ServletConfig conf;
+	
+	@Override
+	public void init(ServletConfig config) throws ServletException {
+		conf = config;
+		System.out.println("Creating object......");
+	}
+	
+	@Override
+	public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
+		System.out.println("Servicing....");
+	}
+	
+	@Override
+	public void destroy() {
+		System.out.println("Going to destroy...");
+	}
+
+	@Override
+	public ServletConfig getServletConfig() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getServletInfo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+}

@@ -1,0 +1,37 @@
+package com.servlets;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class RegisterServlet extends HttpServlet{
+
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		resp.setContentType("text/html");
+		PrintWriter printWriter = resp.getWriter();
+		printWriter.println("<h1>Welcome to register page</h1>");
+		
+		String name = req.getParameter("userName");
+		String password = req.getParameter("userPassword");
+		String email = req.getParameter("userEmail");
+		String gender = req.getParameter("userGender");
+		String course = req.getParameter("userCourse");
+		String condition = req.getParameter("condition");
+		
+		if(condition.equals("checked")) {
+			printWriter.println("Name: " + name);
+			printWriter.println("Password: " + password);
+			printWriter.println("Email: " + email);
+			printWriter.println("Gender: " + gender);
+			printWriter.println("Course: " + course);
+		}else if(condition.equals(null)){
+			printWriter.println("<h2>You hav not accepted condition</h2>");
+		}
+	}
+	
+}

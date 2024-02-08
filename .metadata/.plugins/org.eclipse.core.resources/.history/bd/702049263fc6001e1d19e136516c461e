@@ -1,0 +1,39 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>Register here!</h2>
+	<form action="Register">
+		<table>
+			<tr>
+				<td>Name:</td>
+				<td><input type="text" name="userName" placeholder="Enter name here"></td>
+			</tr>
+			<tr>
+				<td>Password:</td>
+				<td><input type="password" name="userPassword" placeholder="Enter password here"></td>
+			</tr>
+			<tr>
+				<td>Email:</td>
+				<td><input type="text" name="userEmail" placeholder="Enter email here"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><button type="submit">Register</button></td>
+			</tr>
+		</table>
+	</form>
+	<div style="color: green; display: none;">
+		<h3>Loading....</h3>
+	</div>
+	
+	<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+</body>
+
+
+</html>
