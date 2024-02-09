@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="NewWizardAction">
-		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jst.jsp.ui.internal.wizard.NewJSPWizard"/>
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.NewPackageCreationWizard"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
-			<item value="org.eclipse.wst.web.ui"/>
+			<item value="org.eclipse.jdt.ui.java"/>
 		</list>
 	</section>
 	<section name="WorkbenchPreferenceDialog">
 		<item key="DIALOG_X_ORIGIN" value="2"/>
-		<item key="DIALOG_Y_ORIGIN" value="-70"/>
+		<item key="DIALOG_Y_ORIGIN" value="-30"/>
 		<item key="DIALOG_WIDTH" value="1072"/>
 		<item key="DIALOG_HEIGHT" value="865"/>
 		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|11.0|0|GTK|1|"/>
@@ -26,5 +26,7 @@
 		</list>
 		<list key="textArray">
 		</list>
+	</section>
+	<section name="ImportExportAction">
 	</section>
 </section>

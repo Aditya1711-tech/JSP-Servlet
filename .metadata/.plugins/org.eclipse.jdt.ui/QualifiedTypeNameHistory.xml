@@ -10,7 +10,6 @@
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="javax.servlet.http.Cookie"/>
     <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
-    <fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
     <fullyQualifiedTypeName name="javax.swing.tree.AbstractLayoutCache"/>
     <fullyQualifiedTypeName name="java.awt.geom.Area"/>
     <fullyQualifiedTypeName name="java.lang.Class"/>
@@ -19,4 +18,8 @@
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="javax.swing.text.html.HTMLDocument.HTMLReader.PreAction"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="org.apache.jasper.compiler.Node.GetProperty"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
+    <fullyQualifiedTypeName name="javax.servlet.jsp.tagext.Tag"/>
+    <fullyQualifiedTypeName name="javax.servlet.jsp.JspWriter"/>
 </qualifiedTypeNameHistroy>
