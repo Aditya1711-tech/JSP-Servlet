@@ -31,7 +31,7 @@ public class Helper {
 			
 			FileOutputStream fos = new FileOutputStream(path);
 			fos.write(b);
-			fos.flush();
+//			fos.flush();
 			fos.close();
 			flag = true;
 			

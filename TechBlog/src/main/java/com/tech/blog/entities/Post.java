@@ -10,8 +10,10 @@ public class Post {
 	private String pPick;
 	private Timestamp pDate;
 	private int catId;
+	private int userId;
 
-	public Post(int pId, String pTitle, String pContent, String pCode, String pPick, Timestamp pDate, int catId) {
+	public Post(int pId, String pTitle, String pContent, String pCode, String pPick, Timestamp pDate, int catId,
+			int userId) {
 		super();
 		this.pId = pId;
 		this.pTitle = pTitle;
@@ -20,7 +22,23 @@ public class Post {
 		this.pPick = pPick;
 		this.pDate = pDate;
 		this.catId = catId;
+		this.userId = userId;
 	}
+	
+
+
+	public Post(String pTitle, String pContent, String pCode, String pPick, Timestamp pDate, int catId, int userId) {
+		super();
+		this.pTitle = pTitle;
+		this.pContent = pContent;
+		this.pCode = pCode;
+		this.pPick = pPick;
+		this.pDate = pDate;
+		this.catId = catId;
+		this.userId = userId;
+	}
+
+
 
 	public Post() {
 		super();
@@ -82,4 +100,12 @@ public class Post {
 		this.catId = catId;
 	}
 
+	public int getUserId() {
+		return userId;
+	}
+
+	public void setUserId(int userId) {
+		this.userId = userId;
+	}
+	
 }

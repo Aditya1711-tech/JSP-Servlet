@@ -50,7 +50,7 @@ public class EditUserServlet extends HttpServlet {
 			boolean isUserUpdated = userDao.updateUser(loggedInUser);
 
 			if (isUserUpdated) {
-				String path = req.getRealPath("/") + "pics" + java.io.File.pathSeparator + loggedInUser.getProfile();
+				String path = req.getRealPath("/") + "pics" + java.io.File.separator + loggedInUser.getProfile();
 				Helper.deleteFile(path);
 				if (Helper.saveFile(part.getInputStream(), path)) {
 					Message msg = new Message("Profile details updated..", "success", "alert-success ");
