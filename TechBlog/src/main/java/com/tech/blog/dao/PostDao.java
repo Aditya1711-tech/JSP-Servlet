@@ -95,9 +95,8 @@ public class PostDao {
 
 		return posts;
 	}
-	
-	
-	public ArrayList<Post> getAllPostByCat(int catId){
+
+	public ArrayList<Post> getAllPostByCat(int catId) {
 		ArrayList<Post> posts = new ArrayList<Post>();
 
 		try {
@@ -115,7 +114,7 @@ public class PostDao {
 				Timestamp pDate = resultSet.getTimestamp("pDate");
 				int catId1 = resultSet.getInt("catId");
 				int userId = resultSet.getInt("userId");
-				if(catId == catId1) {					
+				if (catId == catId1) {
 					Post post = new Post(pId, pTitle, pContent, pCode, pPick, pDate, catId1, userId);
 					posts.add(post);
 				}
@@ -126,6 +125,33 @@ public class PostDao {
 		}
 
 		return posts;
+	}
+
+	public Post getPostById(int postId) {
+		Post post = null;
+		try {
+			String query = "select * from posts where pid=?";
+			PreparedStatement prst = con.prepareStatement(query);
+			prst.setInt(1, postId);
+
+			ResultSet res = prst.executeQuery();
+			if (res.next()) {
+				String pTitleString = res.getString("pTitle");
+				String pContentString = res.getString("pContent");
+				String pCodeString = res.getString("pCode");
+				String pPickString = res.getString("pPick");
+				Timestamp pDate = res.getTimestamp("pDate");
+				int catId = res.getInt("catId");
+				int userId = res.getInt("userId");
+
+				post = new Post(postId, pTitleString, pContentString, pCodeString, pPickString, pDate, catId, userId);
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return post;
 	}
 
 }
